@@ -237,3 +237,67 @@ def solution(n):
     for x in range(len(a)):
         answer.append(int(b[x]))
     return answer'''
+import math
+
+def solution(n):
+    answer = 0
+    a = math.sqrt(n)
+    if a == int(a):
+        answer = (a+1)**2
+    else:
+        answer = -1
+    return answer
+def solution(s):
+    answer = True
+    a = 0
+    b = 0
+    for x in s:
+        if x == 'p' or x == 'P':
+            a += 1
+        elif x == 'y' or x == 'Y':
+            b += 1
+    if a == b:
+        return True
+    else:
+        return False
+    return True
+def solution(x):
+    answer = True
+    a = str(x)
+    sum = 0
+    for y in range(len(a)):
+        sum += int(a[y])
+    if x % sum == 0:
+        return True
+    else:
+        return False
+    return answer
+def solution(x, n):
+    answer = []
+    for a in range(1,n+1):
+        answer.append(a*x)
+    return answer
+def solution(n):
+    answer = 0
+    a = list(map(int,str(n)))
+    b = sorted(a,reverse = True)
+    c = [str(i) for i in b]
+    d = "".join(c)
+    answer = int(d)
+    return answer
+def solution(n):
+    answer = 0
+    a = []
+    for s in range(1,n+1):
+        a.append(s)
+    for x in a:
+        if n % x == 1:
+            answer = x
+            break
+    return answer
+def solution(n):
+    answer = 0
+    for x in range(1,n+1):
+        if n % x == 1:
+            return x
+            break
