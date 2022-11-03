@@ -203,6 +203,79 @@ print(d)
 
 b = d[0:2,:]
 print(b)
-'''
+''''''
 a = np.array([1,2,3,4,5,6,7])
-print(a[::-2])
+print(a[::-2])''''''
+
+a = np.arange(0,16).reshape(4,4)
+
+print(a[:,1])
+print(a[2,1:])
+print(a[:2,:2])
+print(a[1:3,1:3])
+
+b = a.flatten()
+
+print(a.flatten()[:7])
+print(b[:7])
+print(b[8:16])'''
+'''
+a=np.array([[1,1,-1],[2,-1,3],[1,2,1]])
+b=np.array([0,9,8])
+
+x=np.linalg.solve(a,b)
+print(x)
+
+print("x = {}, y = {}, z = {}".format(x[0],x[1],x[2]))
+
+c=np.linalg.det(a)
+print("det(A) = {:.1f}".format(c))'''
+'''
+x = np.array([4,6,7,3,2])
+print((x>3).all())''''''
+
+def solution(num_list):
+    answer = list(reversed(num_list))
+    return answer
+
+a=[1,2,3,4,5]
+print(solution(a))'''
+
+'''n = [1, 2, 3, 4, 5]
+
+a = sorted(n, reverse = True)
+print(a[0] * a[1])'''
+'''
+a = "abcdef"
+
+print(sorted(a))'''
+'''
+def solution(sides):
+    answer = 0
+    a = max(sides)
+    b = 0
+    for x in sides:
+        if x != a:
+            b += x
+    if a < b:
+        answer = 1
+    else:
+        answer = 2
+    return answer
+
+a = [1,2,3]
+b = [3,6,2]
+c = [152,173,123]
+
+print(solution(a))
+print(solution(b))
+print(solution(c))'''
+
+n = 12345
+a = str(n)
+b = a[::-1]
+answer = []
+print(type(b))
+for x in range(len(a)):
+    answer += int(b[x])
+print(answer)
