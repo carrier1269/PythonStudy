@@ -237,7 +237,7 @@ def solution(n):
     for x in range(len(a)):
         answer.append(int(b[x]))
     return answer'''
-import math
+'''import math
 
 def solution(n):
     answer = 0
@@ -300,4 +300,43 @@ def solution(n):
     for x in range(1,n+1):
         if n % x == 1:
             return x
-            break
+            break'''
+'''a= ["Jane","Kim"]
+print(len(a))
+print(a[0])
+if a[0] == "Jane":
+    print(True)
+
+def solution(seoul):
+    answer = ''
+    for x in len(seoul):
+        if seoul[x] == "Kim":
+            print(x)
+'''
+'''s = "1 2 3 4"
+a = s.split(" ")
+print(a)'''
+'''def solution(s):
+    answer = ' '
+    a = s.split(" ")
+    b = max(a)
+    c = min(a)
+    d = [b,c]
+    print( " ".join(d))
+
+a = "1 2 3 4"
+solution(a)
+b = a.split(" ")
+c = int(max(b))
+print(type(c))
+print(c)'''
+'''s = "1 2 3 4"
+answer = ' '
+a = s.split(" ")
+b = max(a)
+c = min(a)
+if int(b) < 0:
+    b,c = c,b
+d = [c, b]
+print(d)'''
+
